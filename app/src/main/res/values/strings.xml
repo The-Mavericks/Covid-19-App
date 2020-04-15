@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ChatBot</string>
+    <string name="ask_watson">Ask Us</string>
+    <string name="title_home">Home</string>
+    <string name="hello">hello</string>
+    <string name="title_country">Country</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="chooser">Send Message......</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+</resources>

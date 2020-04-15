@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app_home"
+    android:background="@drawable/bluegreen"
+    android:id="@+id/drawer_layout">
+
+<!--        <View-->
+<!--            android:id="@+id/ic_bg_topheader"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:background="@drawable/ic_bg_topheader"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="512dp"
+                android:paddingBottom="512dp" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#ffffff"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/main_menu"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="60dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/chatbot1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chatbot"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/tracker"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/xyz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tracker"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/hotspot"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="97dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/freq" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cases near me"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/news"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="99dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/update" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Updates"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/updates"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="99dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/who" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WHO Updates"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/impact"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="99dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/impact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Impact"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/feedback">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/toolbar"
+
+        android:background="@color/cardview_light_background">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ffffff"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text"
+                android:hint="Name"
+                android:id="@+id/name"
+                android:layout_marginTop = "100dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone no."
+                android:background="@drawable/text"
+                android:id="@+id/phone"
+                android:layout_marginTop = "30dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email-id"
+                android:background="@drawable/text"
+                android:id="@+id/email"
+                android:layout_marginTop = "30dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:hint="Feedback"
+                android:id="@+id/msg"
+                android:background="@drawable/text"
+                android:layout_marginTop = "30dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:id="@+id/button"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop = "30dp"/>
+
+
+
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            app:boxCornerRadiusBottomEnd="20dp"-->
+<!--            app:boxCornerRadiusBottomStart="20dp"-->
+<!--            app:boxCornerRadiusTopEnd="20dp"-->
+<!--            app:boxCornerRadiusTopStart="20dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:id="@+id/input1"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Name"-->
+<!--                android:id="@+id/name"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            app:boxCornerRadiusBottomEnd="20dp"-->
+<!--            app:boxCornerRadiusBottomStart="20dp"-->
+<!--            app:boxCornerRadiusTopEnd="20dp"-->
+<!--            app:boxCornerRadiusTopStart="20dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:id="@+id/input2"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="EmailI-id"-->
+<!--                android:id="@+id/email"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            app:boxCornerRadiusBottomEnd="20dp"-->
+<!--            app:boxCornerRadiusBottomStart="20dp"-->
+<!--            app:boxCornerRadiusTopEnd="20dp"-->
+<!--            app:boxCornerRadiusTopStart="20dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:id="@+id/input3"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Phone Number"-->
+<!--                android:id="@+id/phone"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            app:boxCornerRadiusBottomEnd="20dp"-->
+<!--            app:boxCornerRadiusBottomStart="20dp"-->
+<!--            app:boxCornerRadiusTopEnd="20dp"-->
+<!--            app:boxCornerRadiusTopStart="20dp"-->
+<!--            android:id="@+id/input4"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="350dp"-->
+<!--                android:hint="Message"-->
+<!--                android:id="@+id/msg"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Send" />-->
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
