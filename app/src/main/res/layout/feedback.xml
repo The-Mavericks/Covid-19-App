@@ -37,18 +37,24 @@
                 android:background="@drawable/text"
                 android:hint="Name"
                 android:id="@+id/name"
-                android:layout_marginTop = "100dp"/>
+                android:layout_marginTop = "100dp"
+                android:layout_marginLeft = "10dp"
+                android:layout_marginRight = "10dp"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Phone no."
                 android:background="@drawable/text"
                 android:id="@+id/phone"
+                android:layout_marginLeft = "10dp"
+                android:layout_marginRight = "10dp"
                 android:layout_marginTop = "30dp"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Email-id"
+                android:layout_marginLeft = "10dp"
+                android:layout_marginRight = "10dp"
                 android:background="@drawable/text"
                 android:id="@+id/email"
                 android:layout_marginTop = "30dp"/>
@@ -57,6 +63,8 @@
                 android:layout_height="250dp"
                 android:hint="Feedback"
                 android:id="@+id/msg"
+                android:layout_marginLeft = "10dp"
+                android:layout_marginRight = "10dp"
                 android:background="@drawable/text"
                 android:layout_marginTop = "30dp"/>
 
@@ -65,6 +73,8 @@
                 android:layout_height="wrap_content"
                 android:text="Send"
                 android:id="@+id/button"
+                android:layout_marginLeft = "10dp"
+                android:layout_marginRight = "10dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:layout_marginTop = "30dp"/>
 

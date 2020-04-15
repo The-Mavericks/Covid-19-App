@@ -49,6 +49,7 @@ public class app_home extends AppCompatActivity {
 
         toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Not Yet Decided");
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
