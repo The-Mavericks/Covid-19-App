@@ -16,7 +16,7 @@
         android:layout_marginTop="287dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="323dp"
-        android:text="COVID-19"
+        android:text="COVID CARE"
         android:textSize="60sp"
         android:textColor="#fff"
         android:textStyle="bold"

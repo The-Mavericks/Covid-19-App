@@ -49,7 +49,7 @@ public class app_home extends AppCompatActivity {
 
         toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Not Yet Decided");
+        getSupportActionBar().setTitle("COVID CARE");
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
@@ -117,7 +117,7 @@ public class app_home extends AppCompatActivity {
         hotspot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hotspot.getContext().startActivity(new Intent(hotspot.getContext(), MapsActivity.class));
+                hotspot.getContext().startActivity(new Intent(hotspot.getContext(), hotspot_home.class));
             }
         });
         impact.setOnClickListener(new View.OnClickListener() {
