@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Coronavirus COVID-19 Cases\nWorldWide"
+            android:text="Coronavirus COVID-19\nGlobal Cases"
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="24dp" />
@@ -30,7 +30,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Confirmed"
-            android:textStyle="bold"
             android:textColor="#000" />
 
         <TextView
@@ -38,7 +37,7 @@
             style="@style/TotalFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorTotalConfirmed"
+            android:textColor="#000"
             tools:text="162387" />
 
         <TextView
@@ -47,15 +46,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Deaths"
-            android:textStyle="bold"
-            android:textColor="@color/colorTotalDeaths" />
+            android:textColor="#000" />
 
         <TextView
             android:id="@+id/tvTotalDeaths"
             style="@style/TotalFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorTotalDeaths"
+            android:textColor="#000"
             tools:text="75648" />
 
         <TextView
@@ -64,15 +62,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Recovered"
-            android:textStyle="bold"
-            android:textColor="@color/colorTotalRecovered" />
+            android:textColor="#000" />
 
         <TextView
             android:id="@+id/tvTotalRecovered"
             style="@style/TotalFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorTotalRecovered"
+            android:textColor="#000"
             tools:text="75938" />
 
         <TextView

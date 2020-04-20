@@ -38,6 +38,6 @@
             android:layout_marginLeft="8dp"
             android:textColor="#000"
             android:textSize="20sp"
-            tools:text="Italy" />
+            tools:text="China" />
     </LinearLayout>
 </RelativeLayout>

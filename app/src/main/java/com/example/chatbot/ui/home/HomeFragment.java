@@ -11,13 +11,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.chatbot.R;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.chatbot.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,6 +41,9 @@ public class HomeFragment extends Fragment {
         tvTotalRecovered = root.findViewById(R.id.tvTotalRecovered);
         tvLastUpdated = root.findViewById(R.id.tvLastUpdated);
         progressBar = root.findViewById(R.id.progress_circular_home);
+
+        // Action Bar title
+        getActivity().setTitle("Overview");
 
         // call Volley
         getData();

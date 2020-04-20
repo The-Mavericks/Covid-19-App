@@ -1,6 +1,5 @@
 package com.example.chatbot;
 
-
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,13 +11,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class tracker_home extends AppCompatActivity {
 
-    //private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tracker_home);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-
 
         navView.setItemIconTintList(null);
         // Passing each menu ID as a set of Ids because each

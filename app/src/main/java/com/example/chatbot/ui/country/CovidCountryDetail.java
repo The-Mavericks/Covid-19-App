@@ -1,12 +1,11 @@
 package com.example.chatbot.ui.country;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.chatbot.R;
+import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.chatbot.R;
 public class CovidCountryDetail extends AppCompatActivity {
 
     TextView tvDetailCountryName, tvDetailTotalCases, tvDetailTodayCases, tvDetailTotalDeaths,
@@ -33,7 +32,7 @@ public class CovidCountryDetail extends AppCompatActivity {
 
         // set text view
         tvDetailCountryName.setText(covidCountry.getmCovidCountry());
-        tvDetailTotalCases.setText(covidCountry.getmCases());
+        tvDetailTotalCases.setText(Integer.toString(covidCountry.getmCases()));
         tvDetailTodayCases.setText(covidCountry.getmTodayCases());
         tvDetailTotalDeaths.setText(covidCountry.getmDeaths());
         tvDetailTodayDeaths.setText(covidCountry.getmTodayDeaths());
@@ -43,4 +42,3 @@ public class CovidCountryDetail extends AppCompatActivity {
 
     }
 }
-
